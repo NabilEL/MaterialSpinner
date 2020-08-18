@@ -445,6 +445,7 @@ public class MaterialSpinner extends TextView {
     boolean shouldResetPopupHeight = listView.getAdapter() != null;
     adapter.setHintEnabled(!TextUtils.isEmpty(hintText));
     listView.setAdapter(adapter);
+    nothingSelected = true;
     if (selectedIndex >= adapter.getCount()) {
       selectedIndex = 0;
     }
